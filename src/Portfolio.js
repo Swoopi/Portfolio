@@ -16,7 +16,7 @@ const Portfolio = () => {
                 <img className="portfolio-image" src={image} alt="name"/>
                 <h1 className="portfolio-name"> Dylan Farrell</h1>
                 <h2 className="portfolio-subtitle">Software Engineer</h2>
-                <a href="Dylan-Farrell-Resume.pdf" download className="portfolio-button" target="_blank" rel="noopener noreferrer">
+                <a href="/resume" className="portfolio-button" target="_blank" rel="noopener noreferrer">
                     View My Resume!
                 </a>
                 <FaLinkedin size={40} onClick={handleClick} style={{ marginTop: '20px', cursor: 'pointer' }}/>  {/* LinkedIn icon */}

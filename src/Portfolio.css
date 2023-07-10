@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-body{
+
+.portfolio-container {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
@@ -7,6 +8,11 @@ body{
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 @keyframes gradient {
@@ -68,13 +74,6 @@ body{
         transform: translateX(1);
     }
 }
-.portfolio-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* this will center your content vertically */
-}
 
 .portfolio-image {
     width: 200px;
@@ -85,36 +84,24 @@ body{
 
 .portfolio-button {
     --s: 0.1em;   /* the thickness of the line */
-  --c: #2c4bff; /* the color */
+    --c: #2c4bff; /* the color */
   
-  color: #0000;
-  padding-bottom: var(--s);
-  background: 
-    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: 0.5s;
-  font-size: 20px;
-  margin-top: 10px;
-}
-.portfolio-button:hover {
-  --_p: 100%;
-}
-/*
-.portfolio-name{
-    font-size: 30px;
-    font-weight: bold;
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+        linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: 0.5s;
+    font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    color: hsla(0, 0%, 0%, .9);
-  font: normal 30px Varela Round, sans-serif;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  animation: move linear 2000ms infinite;  
 }
 
-*/
+.portfolio-button:hover {
+    --_p: 100%;
+}
+
 .portfolio-name {
     white-space: nowrap;
     overflow: hidden;
@@ -133,18 +120,14 @@ body{
   50% { border-color: transparent; }
 }
 
-
-
-
-
 .portfolio-subtitle{
     font-size: 10px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
     color: hsla(0, 0%, 0%, .9);
-  font: normal 20px Varela Round, sans-serif;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  animation: move linear 2000ms infinite;
+    font: normal 20px Varela Round, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    animation: move linear 2000ms infinite;
 }
