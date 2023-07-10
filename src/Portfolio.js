@@ -1,12 +1,15 @@
 import React from 'react';
 import './Portfolio.css'; 
 import image from './My_project.png';
-import { FaLinkedin } from 'react-icons/fa';  // Import LinkedIn icon
+import { FaLinkedin, FaGithub } from 'react-icons/fa';  // Import LinkedIn and GitHub icons
 
 const Portfolio = () => {
-    const handleClick = () => {
-        // This will open your LinkedIn profile in a new tab
+    const handleLinkedInClick = () => {
         window.open('https://www.linkedin.com/in/dylan-farrell-71a21a1ba/', '_blank');
+    };
+
+    const handleGitHubClick = () => {
+        window.open('https://github.com/swoopi', '_blank');
     };
 
     return (
@@ -19,7 +22,10 @@ const Portfolio = () => {
                 <a href="/resume" className="portfolio-button" target="_blank" rel="noopener noreferrer">
                     View My Resume!
                 </a>
-                <FaLinkedin size={40} onClick={handleClick} style={{ marginTop: '20px', cursor: 'pointer' }}/>  {/* LinkedIn icon */}
+                <div style={{ display: 'flex', marginTop: '10px' }}>
+                <FaLinkedin size={40} onClick={handleLinkedInClick} style={{ marginTop: '20px', cursor: 'pointer' }}/>  {/* LinkedIn icon */}
+                <FaGithub size={40} onClick={handleGitHubClick} style={{ marginTop: '20px', marginLeft: '20px', cursor: 'pointer' }}/>  {/* GitHub icon */}
+            </div>
             </div>
         </body>
     );
