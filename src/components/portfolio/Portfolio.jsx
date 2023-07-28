@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/IMG1.PNG' // replace with correct file path
 import IMG2 from '../../assets/IMG2.PNG' // replace with correct file path
-import IMG3 from '../../assets/IMG3.jpg' // replace with correct file path
+//import IMG3 from '../../assets/IMG3.jpg' // replace with correct file path
 
 const data = [
   {
