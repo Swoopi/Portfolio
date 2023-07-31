@@ -18,13 +18,6 @@ const data = [
     title: 'Customer Management System',
     github: 'https://github.com/Swoopi/CustomerApp',
     
-  },
-  {
-    id: 3,
-    image: IMG2,
-    title: 'Personal Budgeting app',
-    github: 'https://github.com',
-    
   }
 ]
 
