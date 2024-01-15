@@ -23,6 +23,7 @@ const data = [
     id: 3,
     image: IMG3,
     title: 'Photo Application',
+
     
   }
 ]
@@ -30,20 +31,17 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      {/* ... */}
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, github}) => (
+          data.map(({id, image, title, github, schoolProject}) => (
             <article key={id} className='portfolio__item'>
-              <div className='portfolio__irem-image'>
+              <div className='portfolio__item-image'>
                 <img src={image} alt={title}/>
-                <h3>
-                  {title}
-                </h3>
+                <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn'>Github</a>
-                  
+                  {github && <a href={github} className='btn'>Github</a>}
+                  {schoolProject && <span className='school-project-text'>School Project</span>}
                 </div>
               </div>
             </article>
