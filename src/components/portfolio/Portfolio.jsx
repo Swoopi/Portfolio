@@ -23,6 +23,7 @@ const data = [
     id: 3,
     image: IMG3,
     title: 'Photo Application',
+    schoolProject: true,
 
     
   }
