@@ -1,6 +1,7 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/IMG1.PNG' // replace with correct file path
+import IMG1 from '../../assets/IMG1.png' // replace with correct file path
+import FINALREPORT from '../../assets/FINALPDF.pdf' // replace with correct file path
 import IMG2 from '../../assets/IMG2.PNG' // replace with correct file path
 import IMG3 from '../../assets/IMG3.png' // replace with correct file path
 
@@ -8,15 +9,15 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Chess AI Engine',
-    github: 'https://github.com/Swoopi/Chess',
+    title: 'Face and Digit Classification',
+    github: FINALREPORT,
     
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Customer Management System',
-    github: 'https://github.com/Swoopi/CustomerApp',
+    title: 'Online Auction Platform',
+    github: 'https://github.com/Swoopi/PrinInfo',
     
   },
   {
@@ -41,7 +42,7 @@ const Portfolio = () => {
                 <img src={image} alt={title}/>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  {github && <a href={github} className='btn'>Github</a>}
+                  {github && <a href={github} className='btn'>Reference</a>}
                   {schoolProject && <span className='school-project-text'>School Project</span>}
                 </div>
               </div>
