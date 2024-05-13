@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/IMG1.png' // replace with correct file path
-import FINALREPORT from '../../assets/FINALPDF.pdf' // replace with correct file path
-import IMG2 from '../../assets/IMG2.PNG' // replace with correct file path
-import IMG3 from '../../assets/IMG3.png' // replace with correct file path
+import IMG1 from '../../assets/IMG1.png' 
+import FINALREPORT from '../../assets/FINALREPORT.pdf' 
+import IMG2 from '../../assets/IMG2.PNG' 
+import IMG3 from '../../assets/IMG3.png' 
 
 const data = [
   {
