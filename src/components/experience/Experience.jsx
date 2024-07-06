@@ -15,7 +15,7 @@ const Experience = () => {
             <article className='experience__details'>
               <ImCheckmark className='experience_details-icon'/>
               <div>
-                <h4>Python</h4>
+                <h4>Java</h4>
                 <small className='text-light'>Experienced</small>
               </div>
 
@@ -23,7 +23,7 @@ const Experience = () => {
             <article className='experience__details'>
               <ImCheckmark className='experience_details-icon'/>
               <div>
-                <h4>Java</h4>
+                <h4>Python</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
 
@@ -32,7 +32,7 @@ const Experience = () => {
               <ImCheckmark className='experience_details-icon'/>
               <div>
                 <h4>C</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Basic</small>
               </div>
 
             </article>
@@ -64,7 +64,7 @@ const Experience = () => {
             <article className='experience__details'>
               <ImCheckmark className='experience_details-icon'/>
               <div>
-                <h4>React</h4>
+                <h4>Android Studio</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
 
@@ -72,7 +72,7 @@ const Experience = () => {
             <article className='experience__details'>
               <ImCheckmark className='experience_details-icon'/>
               <div>
-                <h4>Git</h4>
+                <h4>React</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
 
