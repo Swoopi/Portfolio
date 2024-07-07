@@ -1,6 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-import IMG1 from '../../assets/IMG1.PNG';
+import IMG1 from '../../assets/IMG1.png';
 import FINALREPORT from '../../assets/FINALREPORT.pdf';
 import IMG2 from '../../assets/IMG2.PNG';
 import IMG3 from '../../assets/IMG3.png';
@@ -14,7 +14,7 @@ const data = [
     image: IMG1,
     title: 'Face and Digit Classification',
     github: FINALREPORT,
-    technologies: ['Python'],
+    technologies: ['Python', 'Numpy', 'Neural Networks'],
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const data = [
     image: IMG2,
     title: 'Customer Management App',
     github: 'https://github.com/Swoopi/CustomerApp',
-    technologies: ['Python', 'Django', 'PostgresSQL'],
+    technologies: ['Python', 'Django', 'PostgreSQL'],
   },
   {
     id: 5,
