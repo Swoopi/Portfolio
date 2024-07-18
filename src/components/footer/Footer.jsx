@@ -12,7 +12,7 @@ import C_ICON from '../../assets/tech_icons/C-icon.jpg';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="experience">
       <h2 className="footer__title">Tech Stack</h2>
       <div className="footer__icons">
         <div className="footer__icons-container">
