@@ -9,7 +9,14 @@ const Nav = () => {
   const handleNavigation = (event, nav) => {
     event.preventDefault();
     setActiveNav(nav);
-    window.location.hash = nav;
+    if (nav === '') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(nav);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   useEffect(() => {
@@ -37,9 +44,7 @@ const Nav = () => {
 
   return (
     <nav>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a href="#" onClick={(event) => handleNavigation(event, '')} className={activeNav === '' ? 'active' : ''}><AiOutlineHome /></a>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a href="#experience" onClick={(event) => handleNavigation(event, 'experience')} className={activeNav === 'experience' ? 'active' : ''}><BiBook /></a>
     </nav>
   );
