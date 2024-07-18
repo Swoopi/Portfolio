@@ -7,6 +7,8 @@ import HTMLICON from '../../assets/tech_icons/html-icon.jpg';
 import CSSICON from '../../assets/tech_icons/css-icon.jpg';
 import REACTICON from '../../assets/tech_icons/react-icon.jpg';
 import C_ICON from '../../assets/tech_icons/C-icon.jpg';
+import ANDROIDICON from '../../assets/tech_icons/android-icon.jpg'
+import NODEICON from '../../assets/tech_icons/node-icon.jpg'
 
 
 
@@ -19,24 +21,22 @@ const Footer = () => {
           <img src={JAVAICON} alt="Icon 1" className="footer__icon" />
           <img src={PYTHONICON} alt="Icon 2" className="footer__icon" />
           <img src={DJANGOICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={HTMLICON} alt="Icon 1" className="footer__icon" />
-          <img src={CSSICON} alt="Icon 2" className="footer__icon" />
-          <img src={REACTICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={C_ICON} alt="Icon 3" className="footer__icon" /> 
+          <img src={HTMLICON} alt="Icon 4" className="footer__icon" />
+          <img src={CSSICON} alt="Icon 5" className="footer__icon" />
+          <img src={REACTICON} alt="Icon 6" className="footer__icon" /> 
+          <img src={C_ICON} alt="Icon 7" className="footer__icon" /> 
+          <img src={ANDROIDICON} alt="Icon 8" className="footer__icon" /> 
+          <img src={NODEICON} alt="Icon 9" className="footer__icon" /> 
           <img src={JAVAICON} alt="Icon 1" className="footer__icon" />
           <img src={PYTHONICON} alt="Icon 2" className="footer__icon" />
           <img src={DJANGOICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={HTMLICON} alt="Icon 1" className="footer__icon" />
-          <img src={CSSICON} alt="Icon 2" className="footer__icon" />
-          <img src={REACTICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={C_ICON} alt="Icon 3" className="footer__icon" />
-          <img src={JAVAICON} alt="Icon 1" className="footer__icon" />
-          <img src={PYTHONICON} alt="Icon 2" className="footer__icon" />
-          <img src={DJANGOICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={HTMLICON} alt="Icon 1" className="footer__icon" />
-          <img src={CSSICON} alt="Icon 2" className="footer__icon" />
-          <img src={REACTICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={C_ICON} alt="Icon 3" className="footer__icon" />  
+          <img src={HTMLICON} alt="Icon 4" className="footer__icon" />
+          <img src={CSSICON} alt="Icon 5" className="footer__icon" />
+          <img src={REACTICON} alt="Icon 6" className="footer__icon" /> 
+          <img src={C_ICON} alt="Icon 7" className="footer__icon" /> 
+          <img src={ANDROIDICON} alt="Icon 8" className="footer__icon" /> 
+          <img src={NODEICON} alt="Icon 9" className="footer__icon" /> 
+           
 
           {/* Add more icons as needed */}
         </div>
