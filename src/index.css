@@ -11,11 +11,11 @@
 }
 :root{
     --color-bg: #000000;
-    --color-bg-variant: #525252;
-    --color-primary: #04d9ff;
-    --color-primary-variant: rgba(0, 15, 97, 0.884);
+    --color-bg-variant: #000000;
+    --color-primary: #FF3333;
+    --color-primary-variant: #CC3333;
     --color-white: #fff;
-    --color-light: #04d9ff;
+    --color-light: #CC3333;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -82,7 +82,7 @@ a:hover{
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-light);
     transition: var(--transition);
 
 }
