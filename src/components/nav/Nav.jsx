@@ -44,7 +44,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href="#" onClick={(event) => handleNavigation(event, '')} className={activeNav === '' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#header" onClick={(event) => handleNavigation(event, '')} className={activeNav === '' ? 'active' : ''}><AiOutlineHome /></a>
       <a href="#experience" onClick={(event) => handleNavigation(event, 'experience')} className={activeNav === 'experience' ? 'active' : ''}><BiBook /></a>
     </nav>
   );
