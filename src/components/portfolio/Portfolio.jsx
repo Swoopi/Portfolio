@@ -62,7 +62,7 @@ const Portfolio = () => {
           data.map(({id, image, title, github, schoolProject, technologies}) => (
             <article key={id} className='portfolio__item'>
               <div className='portfolio__item-image'>
-                <img src={image} alt={title}/>
+                <img src={image} alt='Dylan Farrell'/>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   {github && <a href={github} className='btn'>Reference</a>}

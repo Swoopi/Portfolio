@@ -18,24 +18,34 @@ const Footer = () => {
       <h2 className="footer__title">Tech Stack</h2>
       <div className="footer__icons">
         <div className="footer__icons-container">
-          <img src={JAVAICON} alt="Icon 1" className="footer__icon" />
-          <img src={PYTHONICON} alt="Icon 2" className="footer__icon" />
-          <img src={DJANGOICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={HTMLICON} alt="Icon 4" className="footer__icon" />
-          <img src={CSSICON} alt="Icon 5" className="footer__icon" />
-          <img src={REACTICON} alt="Icon 6" className="footer__icon" /> 
-          <img src={C_ICON} alt="Icon 7" className="footer__icon" /> 
-          <img src={ANDROIDICON} alt="Icon 8" className="footer__icon" /> 
-          <img src={NODEICON} alt="Icon 9" className="footer__icon" /> 
-          <img src={JAVAICON} alt="Icon 1" className="footer__icon" />
-          <img src={PYTHONICON} alt="Icon 2" className="footer__icon" />
-          <img src={DJANGOICON} alt="Icon 3" className="footer__icon" /> 
-          <img src={HTMLICON} alt="Icon 4" className="footer__icon" />
-          <img src={CSSICON} alt="Icon 5" className="footer__icon" />
-          <img src={REACTICON} alt="Icon 6" className="footer__icon" /> 
-          <img src={C_ICON} alt="Icon 7" className="footer__icon" /> 
-          <img src={ANDROIDICON} alt="Icon 8" className="footer__icon" /> 
-          <img src={NODEICON} alt="Icon 9" className="footer__icon" /> 
+
+        <img src={JAVAICON} alt="Dylan Farrell Java icon" className="footer__icon" />
+          <img src={PYTHONICON} alt="Dylan Farrell Python icon" className="footer__icon" />
+          <img src={DJANGOICON} alt="Dylan Farrell Django icon" className="footer__icon" /> 
+          <img src={HTMLICON} alt="Dylan Farrell Html icon" className="footer__icon" />
+          <img src={CSSICON} alt="Dylan Farrell Css icon" className="footer__icon" />
+          <img src={REACTICON} alt="Dylan Farrell React icon" className="footer__icon" /> 
+          <img src={C_ICON} alt="Dylan Farrell C icon" className="footer__icon" /> 
+          <img src={ANDROIDICON} alt="Dylan Farrell Android icon" className="footer__icon" /> 
+          <img src={NODEICON} alt="Dylan Farrell Node icon" className="footer__icon" /> 
+          <img src={JAVAICON} alt="Dylan Farrell Java icon" className="footer__icon" />
+          <img src={PYTHONICON} alt="Dylan Farrell Python icon" className="footer__icon" />
+          <img src={DJANGOICON} alt="Dylan Farrell Django icon" className="footer__icon" /> 
+          <img src={HTMLICON} alt="Dylan Farrell Html icon" className="footer__icon" />
+          <img src={CSSICON} alt="Dylan Farrell Css icon" className="footer__icon" />
+          <img src={REACTICON} alt="Dylan Farrell React icon" className="footer__icon" /> 
+          <img src={C_ICON} alt="Dylan Farrell C icon" className="footer__icon" /> 
+          <img src={ANDROIDICON} alt="Dylan Farrell Android icon" className="footer__icon" /> 
+          <img src={NODEICON} alt="Dylan Farrell Node icon" className="footer__icon" /> 
+          <img src={JAVAICON} alt="Dylan Farrell Java icon" className="footer__icon" />
+          <img src={PYTHONICON} alt="Dylan Farrell Python icon" className="footer__icon" />
+          <img src={DJANGOICON} alt="Dylan Farrell Django icon" className="footer__icon" /> 
+          <img src={HTMLICON} alt="Dylan Farrell Html icon" className="footer__icon" />
+          <img src={CSSICON} alt="Dylan Farrell Css icon" className="footer__icon" />
+          <img src={REACTICON} alt="Dylan Farrell React icon" className="footer__icon" /> 
+          <img src={C_ICON} alt="Dylan Farrell C icon" className="footer__icon" /> 
+          <img src={ANDROIDICON} alt="Dylan Farrell Android icon" className="footer__icon" /> 
+          <img src={NODEICON} alt="Dylan Farrell Node icon" className="footer__icon" /> 
            
 
           {/* Add more icons as needed */}
