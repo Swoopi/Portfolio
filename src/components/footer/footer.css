@@ -1,74 +1,72 @@
 .footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #000000; 
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-bg);
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  color: var(--color-text); /* Adjust text color for visibility */
+  margin-bottom: 1rem;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 80%; /* Adjust the width to make the container smaller */
+  max-width: 600px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.footer__icons-container {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+}
+
+.footer__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .footer__title {
-    font-size: 1.5rem;
-    color: #ffffff; /* Adjust text color for visibility */
-    margin-bottom: 1rem;
+  100% {
+    transform: translateX(-50%);
   }
-  
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+@media screen and (max-width: 1024px) {
   .footer__icons {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 80%; /* Adjust the width to make the container smaller */
-    max-width: 600px; /* Set a max-width for the container */
-    margin: 0 auto; /* Center the container */
+    width: 90%; /* Increase the width for medium devices */
+    max-width: 500px; /* Adjust the max-width for medium devices */
   }
-  
-  .footer__icons-container {
-    display: flex;
-    width: calc(80px * 14 + 1rem * 14); /* Calculate the total width of all icons including margins */
-    animation: scroll 20s linear infinite; /* Adjust the duration as needed */
-  }
-  
+
   .footer__icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 0.5rem;
+    width: 70px; /* Adjust the icon size for medium devices */
+    height: 70px;
   }
-  
-  /* Keyframes for scrolling animation */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ======================= */
+@media screen and (max-width: 600px) {
+  .footer__icons {
+    width: 100%; /* Increase the width for small devices */
+    max-width: 400px; /* Adjust the max-width for small devices */
   }
-  
-  /* ============================ MEDIA QUERIES (MEDIUM DEVICES) ======================= */
-  @media screen and (max-width: 1024px) {
-    .footer__icons {
-      width: 90%; /* Increase the width for medium devices */
-      max-width: 500px; /* Adjust the max-width for medium devices */
-    }
-  
-    .footer__icon {
-      width: 70px; /* Adjust the icon size for medium devices */
-      height: 70px;
-    }
+
+  .footer__icon {
+    width: 60px; /* Adjust the icon size for small devices */
+    height: 60px;
   }
-  
-  /* ============================ MEDIA QUERIES (SMALL DEVICES) ======================= */
-  @media screen and (max-width: 600px) {
-    .footer__icons {
-      width: 100%; /* Increase the width for small devices */
-      max-width: 400px; /* Adjust the max-width for small devices */
-    }
-  
-    .footer__icon {
-      width: 60px; /* Adjust the icon size for small devices */
-      height: 60px;
-    }
-  
-    .footer__title {
-      font-size: 1.2rem; /* Adjust the title size for small devices */
-    }
+
+  .footer__title {
+    font-size: 1.2rem; /* Adjust the title size for small devices */
   }
-  
+}

@@ -2,6 +2,7 @@ header {
   height: 100vh;
   padding-top: 7rem;
   overflow: hidden;
+  position: relative;
 }
 
 .header__container {
@@ -24,6 +25,7 @@ header {
   z-index: 1;
   overflow: hidden;
   min-width: 22ch; /* Ensures enough width for the subtitle */
+  color: var(--color-text);
 }
 
 .typing {
@@ -36,19 +38,36 @@ header {
   font-size: 2em;
 }
 
+.theme-toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--color-primary-variant);
+}
+
 .subtitle {
   font-size: 5px;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: hsla(0, 0%, 100%, 0.9);
+  color: var(--color-text);
   font: normal 20px Varela Round, sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
   animation: move linear 2000ms infinite;
   white-space: nowrap; /* Prevents text from wrapping to the next line */
 }
-
 
 @keyframes typing {
   from {
@@ -60,14 +79,10 @@ header {
   50% {
     border-color: transparent;
   }
+
 }
 
-/* ================= CTA ================= */
-.cta {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-}
+
 
 /* ============ SOCIALS =========== */
 .header__socials {
@@ -119,3 +134,4 @@ header {
     margin-bottom: 2rem;
   }
 }
+

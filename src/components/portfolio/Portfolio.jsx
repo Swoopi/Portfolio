@@ -20,7 +20,7 @@ const data = [
     id: 2,
     image: IMG4,
     title: 'Streaming App',
-    github: '', //Demo
+    github: '', // Demo
     technologies: ['Java', 'SQLite', 'Android Studio' ],
   },
   {
@@ -56,26 +56,25 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h2>My Projects</h2>
+      <h2 className="portfolio__title">My Projects</h2>
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, github, schoolProject, technologies}) => (
+          data.map(({id, image, title, github, technologies}) => (
             <article key={id} className='portfolio__item'>
               <div className='portfolio__item-image'>
-                <img src={image} alt='Dylan Farrell'/>
-                <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  {github && <a href={github} className='btn'>Reference</a>}
-                  {schoolProject && <span className='school-project-text'>School Project</span>}
-                </div>
-                <div className="portfolio__item-technologies">
-                  <h4>Technologies:</h4>
-                  <ul>
-                    {technologies.map((tech, index) => (
-                      <li key={index}>{tech}</li>
-                    ))}
-                  </ul>
-                </div>
+                <img src={image} alt='Project Thumbnail' className="portfolio__image"/>
+              </div>
+              <h3 className="portfolio__item-title">{title}</h3>
+              <div className="portfolio__item-cta">
+                {github && <a href={github} className='btn'>Reference</a>}
+              </div>
+              <div className="portfolio__item-technologies">
+                <h4 className="portfolio__technologies-title">Technologies:</h4>
+                <ul>
+                  {technologies.map((tech, index) => (
+                    <li key={index} className="portfolio__technology-item">{tech}</li>
+                  ))}
+                </ul>
               </div>
             </article>
           ))

@@ -22,8 +22,16 @@
   border-radius: 1.5rem;
   overflow: hidden;
 }
-#portfolio h2 {
-  color: white;
+
+.portfolio__item-title,
+.portfolio__technologies-title,
+.portfolio__technology-item,
+.portfolio__title {
+  color: var(--color-text);
+}
+
+.portfolio__title {
+  color: var(--color-text);
 }
 
 .portfolio__item h3 {
@@ -34,6 +42,11 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.portfolio__item-cta .btn {
+  background: var(--color-text);
+  color: var(--color-bg);
 }
 
 .portfolio__item-technologies {
@@ -55,6 +68,7 @@
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
 }
+
 .portfolio__item:hover .portfolio__item-technologies li {
   background: var(--color-primary-variant);
   color: white;

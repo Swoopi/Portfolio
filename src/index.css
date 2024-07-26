@@ -9,19 +9,30 @@
     text-decoration: none;
 
 }
-:root{
-    --color-bg: #000000;
-    --color-bg-variant: #000000;
-    --color-primary: #FF3333;
-    --color-primary-variant: #CC3333;
-    --color-white: #fff;
-    --color-light: #CC3333;
+:root {
+    /* Light theme */
+    --color-bg-light: #ffffff;
+    --color-bg-variant-light: #f4f4f4;
+    --color-primary-light: #ff3333;          /* Adjusted to red */
+    --color-primary-variant-light: #cc0000;  /* Adjusted to a darker red */
+    --color-text-light: #333333;
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
-    --transition: all 400ms ease;
+    /* Dark theme */
+    --color-bg-dark: #121212;
+    --color-bg-variant-dark: #333333;
+    --color-primary-dark: #ff3333;          /* Red as primary color for dark mode */
+    --color-primary-variant-dark: #cc0000;  /* Darker red for dark mode */
+    --color-text-dark: #ffffff;
+
+    /* Initial default theme set to dark */
+    --color-bg: var(--color-bg-dark);
+    --color-bg-variant: var(--color-bg-variant-dark);
+    --color-primary: var(--color-primary-dark);
+    --color-primary-variant: var(--color-primary-variant-dark);
+    --color-text: var(--color-text-dark);
 }
+
+
 html{
     scroll-behavior: smooth;
 }
