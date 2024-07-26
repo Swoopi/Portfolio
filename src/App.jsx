@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 export const ThemeContext = createContext("light");
 
 const App = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
