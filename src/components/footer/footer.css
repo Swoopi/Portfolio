@@ -15,14 +15,14 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
-  width: 80%; /* Adjust the width to make the container smaller */
-  max-width: 600px; /* Set a max-width for the container */
+  width: 50%; /* Adjust the width to make the container smaller */
+  max-width: 1000px; /* Set a max-width for the container */
   margin: 0 auto; /* Center the container */
 }
 
 .footer__icons-container {
   display: flex;
-  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+  animation: scroll 40s linear infinite; /* Adjust the duration as needed */
 }
 
 .footer__icon {

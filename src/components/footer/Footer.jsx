@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './footer.css';
 import JAVAICON from '../../assets/tech_icons/java-icon.jpg';
 import PYTHONICON from '../../assets/tech_icons/python-icon.jpg';
@@ -12,22 +12,40 @@ import NODEICON from '../../assets/tech_icons/node-icon.jpg';
 
 const icons = [
   JAVAICON, PYTHONICON, DJANGOICON, HTMLICON, CSSICON,
-  REACTICON, C_ICON, ANDROIDICON, NODEICON,
-  JAVAICON, PYTHONICON, DJANGOICON, HTMLICON, CSSICON,
   REACTICON, C_ICON, ANDROIDICON, NODEICON
 ];
 
 const Footer = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const preloadImages = async () => {
+      const promises = icons.map(src => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+      await Promise.all(promises);
+      setLoaded(true);
+    };
+
+    preloadImages();
+  }, []);
+
+  if (!loaded) {
+    return <div>Loading...</div>; // Or any loading spinner
+  }
+
   return (
     <footer className="footer" id="experience">
       <h2 className="footer__title">Tech Stack</h2>
       <div className="footer__icons">
         <div className="footer__icons-container">
-          {icons.map((icon, index) => (
+          {Array(10).fill(icons).flat().map((icon, index) => (
             <img key={index} src={icon} alt={`Icon ${index}`} className="footer__icon" />
-          ))}
-          {icons.map((icon, index) => (
-            <img key={`clone-${index}`} src={icon} alt={`Icon ${index}`} className="footer__icon" />
           ))}
         </div>
       </div>
