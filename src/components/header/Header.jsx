@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './header.css';
 import ME from '../../assets/me.png';
 import CTA from './CTA';
 import HeaderSocial from './HeaderSocials';
-import { ThemeContext } from '../../App';
 import ToggleSwitch from '../toggleswitch/ToggleSwitch';
 
 const Header = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <header>

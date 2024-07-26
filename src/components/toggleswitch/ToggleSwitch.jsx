@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import './toggleswitch.css';
 import { ThemeContext } from '../../App';  // Adjust the import based on your file structure
 import toggleOn from '../../assets/toggle-on.png';
