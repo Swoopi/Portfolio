@@ -6,7 +6,7 @@ This portfolio website is built using React and showcases various projects and s
 ## Features
 - Responsive design that works on desktop, tablets, and mobile phones.
 - Interactive project gallery with filtering options.
-- Contact form integrated with backend services for direct messaging.
+
 
 ## Technologies Used
 - React.js
