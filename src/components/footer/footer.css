@@ -5,68 +5,37 @@
 }
 
 .footer__title {
-  font-size: 1.5rem;
-  color: var(--color-text); /* Adjust text color for visibility */
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
 }
 
-.footer__icons {
-  display: flex;
+.footer__subtitle {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+.footer__skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1.5rem;
   justify-content: center;
-  overflow: hidden;
-  position: relative;
-  width: 50%; /* Adjust the width to make the container smaller */
-  max-width: 1000px; /* Set a max-width for the container */
-  margin: 0 auto; /* Center the container */
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.footer__icons-container {
-  display: flex;
-  animation: scroll 40s linear infinite; /* Adjust the duration as needed */
+.footer__skill {
+  background-color: var(--color-bg-variant); /* Background color variant */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.footer__icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 0.5rem;
-}
-
-/* Keyframes for scrolling animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ======================= */
-@media screen and (max-width: 1024px) {
-  .footer__icons {
-    width: 90%; /* Increase the width for medium devices */
-    max-width: 500px; /* Adjust the max-width for medium devices */
-  }
-
-  .footer__icon {
-    width: 70px; /* Adjust the icon size for medium devices */
-    height: 70px;
-  }
-}
-
-/* ============================ MEDIA QUERIES (SMALL DEVICES) ======================= */
-@media screen and (max-width: 600px) {
-  .footer__icons {
-    width: 100%; /* Increase the width for small devices */
-    max-width: 400px; /* Adjust the max-width for small devices */
-  }
-
-  .footer__icon {
-    width: 60px; /* Adjust the icon size for small devices */
-    height: 60px;
-  }
-
-  .footer__title {
-    font-size: 1.2rem; /* Adjust the title size for small devices */
-  }
+.footer__skill-name {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: bold;
+  text-align: center;
 }
