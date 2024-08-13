@@ -11,6 +11,7 @@ const skills = [
   'MongoDB',
   'HTML/CSS',
   'Git',
+  'AWS'
 
 ];
 
