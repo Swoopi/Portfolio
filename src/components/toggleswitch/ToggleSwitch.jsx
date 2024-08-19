@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import './toggleswitch.css';
 import { ThemeContext } from '../../App';  // Adjust the import based on your file structure
-import toggleOn from '../../assets/toggle-on.png';
-import toggleOff from '../../assets/toggle-off.png';
+import toggleOn from '../../assets/toggle-on.svg';
+import toggleOff from '../../assets/toggle-off.svg';
 
 const ToggleSwitch = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
