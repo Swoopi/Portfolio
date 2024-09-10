@@ -6,51 +6,52 @@ import IMG2 from '../../assets/IMG2.PNG';
 import IMG3 from '../../assets/IMG3.png';
 import IMG4 from '../../assets/IMG4.png';
 import IMG5 from '../../assets/IMG5.png';
-import IMG6 from '../../assets/IMG6.png';
+import IMG6 from '../../assets/IMG6.svg';
 
 const data = [
   {
     id: 1,
+    image: IMG6,
+    title: 'Munch Mates',
+    github: 'https://munchmates.fyi/',
+    technologies: ['Flutter', 'iOS development'],
+  },
+  {
+    id: 2,
     image: IMG1,
     title: 'Face and Digit Classification',
     //github: FINALREPORT,
     technologies: ['Python', 'Numpy', 'Neural Networks'],
   },
   {
-    id: 2,
+    id: 3,
     image: IMG4,
     title: 'Streaming App',
-    github: '', // Demo
+    github: 'https://github.com/Swoopi/IPTV2', // Demo
     technologies: ['Java', 'SQLite', 'Android Studio' ],
   },
   {
-    id: 3,
+    id: 4,
     image: IMG5,
     title: 'Auction Platform',
     github: 'https://github.com/Swoopi/PrinInfo',
     technologies: ['Java', 'Tomcat', 'MySQL Workbench', 'Eclipse' ],
   },
   {
-    id: 4,
+    id: 5,
     image: IMG2,
     title: 'Customer Management App',
     github: 'https://github.com/Swoopi/CustomerApp',
     technologies: ['Python', 'Django', 'PostgreSQL'],
   },
   {
-    id: 5,
+    id: 6,
     image: IMG3,
     title: 'Photos App',
     github: 'https://bitbucket.org/cs213group25/photos25/src/main/',
-    technologies: ['JavaFX'],
+    technologies: ['JavaFX', 'Java', 'Android Studio', 'Tomcat'],
   },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Photos App on Android",
-    github: 'https://bitbucket.org/cs213group25/photosandroid/src/main/',
-    technologies: ['Java', 'Android Studio']
-  }
+ 
 ];
 
 const Portfolio = () => {
