@@ -14,7 +14,7 @@ const data = [
     image: IMG6,
     title: 'Munch Mates',
     github: 'https://munchmates.fyi/',
-    technologies: ['Flutter', 'iOS development'],
+    technologies: ['Dart', 'Flutter', 'Firebase', 'iOS development'],
   },
   {
     id: 2,
