@@ -1,13 +1,26 @@
+/* Toggle Switch Container */
 .toggle-switch {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  
-  .toggle-switch-img {
-    width: 60px; /* Adjust the size as needed */
-    height: auto;
-    transition: all 0.3s ease;  /* Smooth transition */
-  }
-  
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  color: #000;  /* Dark icon in light mode */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  color: #fff;  /* Light icon in dark mode */
+}
+
+/* Icon Styles */
+.toggle-icon {
+  font-size: 50px; /* Adjust the size as needed */
+  transition: color 0.3s ease;
+}
