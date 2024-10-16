@@ -14,7 +14,7 @@ const data = [
     image: IMG7, // Change this to the image for ClipStation
     title: 'ClipStation.io',
     github: 'https://clipstation.io', 
-    technologies: ['Javascript', 'Postgres', 'AWS'], // Update with relevant technologies
+    technologies: ['Typescript', 'Postgres', 'AWS'], // Update with relevant technologies
   },
   {
     id: 2,
