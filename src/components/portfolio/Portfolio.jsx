@@ -1,57 +1,62 @@
 import React from 'react';
 import './portfolio.css';
 import IMG1 from '../../assets/IMG1.PNG';
-//import FINALREPORT from '../../assets/FINALREPORT.pdf';
 import IMG2 from '../../assets/IMG2.PNG';
 import IMG3 from '../../assets/IMG3.png';
 import IMG4 from '../../assets/IMG4.png';
 import IMG5 from '../../assets/IMG5.png';
 import IMG6 from '../../assets/IMG6.svg';
+import IMG7 from '../../assets/IMG7.png'; // Import the image for ClipStation
 
 const data = [
   {
     id: 1,
+    image: IMG7, // Change this to the image for ClipStation
+    title: 'ClipStation.io',
+    github: 'https://clipstation.io', 
+    technologies: ['Javascript', 'Postgres', 'AWS'], // Update with relevant technologies
+  },
+  {
+    id: 2,
     image: IMG6,
     title: 'Munch Mates',
     github: 'https://munchmates.fyi/',
     technologies: ['Dart', 'Flutter', 'Firebase', 'iOS development'],
   },
   {
-    id: 2,
+    id: 3,
     image: IMG1,
     title: 'Face and Digit Classification',
-    //github: FINALREPORT,
     technologies: ['Python', 'Numpy', 'Neural Networks'],
   },
   {
-    id: 3,
+    id: 4,
     image: IMG4,
     title: 'Streaming App',
     github: 'https://github.com/Swoopi/IPTV2', // Demo
     technologies: ['Java', 'SQLite', 'Android Studio' ],
   },
   {
-    id: 4,
+    id: 5,
     image: IMG5,
     title: 'Auction Platform',
     github: 'https://github.com/Swoopi/PrinInfo',
     technologies: ['Java', 'Tomcat', 'MySQL Workbench', 'Eclipse' ],
   },
   {
-    id: 5,
+    id: 6,
     image: IMG2,
     title: 'Customer Management App',
     github: 'https://github.com/Swoopi/CustomerApp',
     technologies: ['Python', 'Django', 'PostgreSQL'],
   },
   {
-    id: 6,
+    id: 7,
     image: IMG3,
     title: 'Photos App',
     github: 'https://bitbucket.org/cs213group25/photos25/src/main/',
     technologies: ['JavaFX', 'Java', 'Android Studio', 'Tomcat'],
   },
- 
 ];
 
 const Portfolio = () => {
