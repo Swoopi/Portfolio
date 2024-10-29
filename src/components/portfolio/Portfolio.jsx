@@ -33,7 +33,6 @@ const data = [
     id: 4,
     image: IMG4,
     title: 'Streaming App',
-    github: 'https://github.com/Swoopi/IPTV2', // Demo
     technologies: ['Java', 'SQLite', 'Android Studio' ],
   },
   {
