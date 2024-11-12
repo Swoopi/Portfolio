@@ -7,50 +7,58 @@ import IMG4 from '../../assets/IMG4.png';
 import IMG5 from '../../assets/IMG5.png';
 import IMG6 from '../../assets/IMG6.svg';
 import IMG7 from '../../assets/IMG7.png'; // Import the image for ClipStation
+import IMG8 from '../../assets/IMG8.png';
 
 const data = [
   {
     id: 1,
+    image: IMG8, // Change this to the image for ClipStation
+    title: 'SmartLedgerAI.com',
+    github: 'https://smartledgerai.com', 
+    technologies: ['Typescript', 'NoSQL', 'AWS'], // Update with relevant technologies
+  },
+  {
+    id: 2,
     image: IMG7, // Change this to the image for ClipStation
     title: 'ClipStation.io',
     github: 'https://clipstation.io', 
     technologies: ['Typescript', 'Postgres', 'AWS'], // Update with relevant technologies
   },
   {
-    id: 2,
+    id: 3,
     image: IMG6,
     title: 'Munch Mates',
     github: 'https://munchmates.fyi/',
     technologies: ['Dart', 'Flutter', 'Firebase', 'iOS development'],
   },
   {
-    id: 3,
+    id: 4,
     image: IMG1,
     title: 'Face and Digit Classification',
     technologies: ['Python', 'Numpy', 'Neural Networks'],
   },
   {
-    id: 4,
+    id: 5,
     image: IMG4,
     title: 'Streaming App',
     technologies: ['Java', 'SQLite', 'Android Studio' ],
   },
   {
-    id: 5,
+    id: 6,
     image: IMG5,
     title: 'Auction Platform',
     github: 'https://github.com/Swoopi/PrinInfo',
     technologies: ['Java', 'Tomcat', 'MySQL Workbench', 'Eclipse' ],
   },
   {
-    id: 6,
+    id: 7,
     image: IMG2,
     title: 'Customer Management App',
     github: 'https://github.com/Swoopi/CustomerApp',
     technologies: ['Python', 'Django', 'PostgreSQL'],
   },
   {
-    id: 7,
+    id: 8,
     image: IMG3,
     title: 'Photos App',
     github: 'https://bitbucket.org/cs213group25/photos25/src/main/',
