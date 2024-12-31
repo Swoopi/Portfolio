@@ -7,22 +7,15 @@ import IMG4 from '../../assets/IMG4.png';
 import IMG5 from '../../assets/IMG5.png';
 import IMG6 from '../../assets/IMG6.svg';
 import IMG7 from '../../assets/IMG7.png'; // Import the image for ClipStation
-import IMG8 from '../../assets/IMG8.png';
 
 const data = [
-  {
-    id: 1,
-    image: IMG8, // Change this to the image for ClipStation
-    title: 'SmartLedgerAI.com',
-    github: 'https://smartledgerai.com', 
-    technologies: ['Typescript', 'NoSQL', 'AWS'], // Update with relevant technologies
-  },
+
   {
     id: 2,
     image: IMG7, // Change this to the image for ClipStation
     title: 'ClipStation.io',
     github: 'https://clipstation.io', 
-    technologies: ['Typescript', 'Postgres', 'AWS'], // Update with relevant technologies
+    technologies: ['Typescript', 'Firebase', 'Cloudinary'], // Update with relevant technologies
   },
   {
     id: 3,
